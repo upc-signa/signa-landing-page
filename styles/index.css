@@ -1,0 +1,116 @@
+/* Global Styles */
+h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: 'Poppins';
+}
+h1, h2, h3 {
+    font-weight: 700;
+}
+a, h4, h5, h6 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 45px;
+}
+h2 {
+    font-size:  35px;
+    line-height: 30px;
+}
+h3 {
+    font-size: 30px;
+    line-height: 25px;
+}
+h4, h5, h6 {
+    font-size: 25px;
+    line-height: 20px;
+}
+p, li {
+    font-size: 20px;
+    line-height: 25px;
+}
+a, span {
+    font-size: 15px;
+    line-height: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 115px 40px 40px;
+}
+.header .navigation {
+    display: flex;
+    gap: 30px;
+}
+.header .navigation a {
+    font-weight: 600;
+    color: white;
+}
+.header > a span {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+    color: white;
+}
+
+m-width { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu-icon {
+    display: none;
+}
+.language {
+    position: absolute;
+    right: 40px;
+    background: transparent;
+    padding: 2px 2px;
+    border-radius: 5px;
+    border-color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+}
+@media (max-width: 870px) {
+    .header .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0,0,0, 0.5);
+    }
+
+    .header .navigation.active {
+        position: absolute;
+        display: flex;
+        top:115px;
+        left: 0;
+        padding: 20px;
+        gap: 0;
+    }
+    .header .navigation a:first-child {
+        border: 0;
+    }
+    .header .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255, 0.2);
+        padding: 20px 0;
+    }
+
+    .menu-icon {
+        color: white;
+        display: block;
+    }
+    .menu-icon:hover {
+        cursor: pointer;
+    }
+}
