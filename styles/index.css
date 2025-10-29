@@ -238,3 +238,80 @@ m-width {
     }
 }
 
+
+/* Plans and Benefits */
+.plans-benefits h2 {
+    font-weight: 700;
+    color: #FC5B38;
+    text-align: center;
+}
+.plans-benefits .content p {
+    text-align: justify;
+    color: #2E2E2E;
+    margin-bottom: 40px;
+}
+.plans-benefits .plans {
+    display: flex;
+    gap: 40px;
+}
+.plans-benefits .plan {
+    border: 1px solid #FC5B38;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.plans-benefits .plan h3 {
+    margin: 0;
+    margin-bottom: 30px;
+    color: #FC5B38;
+}
+.plans-benefits .plan ul {
+    margin-block-start: 0 !important;
+    padding-inline-start: 0 !important;
+    list-style: none;
+    margin-bottom: 40px;
+}
+.plans-benefits .plan ul li {
+    color: #2E2E2E;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+.plans-benefits .plan ul li:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(/assets/icons/signa-icon-check.svg);
+    background-size: 100%;
+    flex-shrink: 0;
+    margin-top: 3px;
+    background-repeat: no-repeat;
+}
+.plans-benefits .plan ul li:last-child {
+    margin-bottom: 0;
+}
+.plans-benefits .plan  a {
+    padding: 15px 50px;
+    border-radius: 7.5px;
+    background: #FC5B38;
+    color: white;
+    font-weight: 600;
+    transition: all .4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+.plans-benefits .plan  a:hover {
+    background: #da3915;
+}
+@media (max-width: 870px) {
+    .plans-benefits .plans {
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
