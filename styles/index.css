@@ -173,3 +173,30 @@ m-width {
         line-height: 25px;
     }
 }
+
+/* Us Serivce */
+.section {
+   margin: 60px auto;
+   max-width: 850px; 
+}
+.us {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.us img {
+    border-radius: 10px;
+    width: 100%;
+}
+.us p {
+    color: #2E2E2E;
+    text-align: justify;
+}
+@media (max-width: 870px) {
+    .section {
+        max-width: 95%;
+        margin: 30px auto;
+    }
+}
