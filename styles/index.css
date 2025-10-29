@@ -200,3 +200,40 @@ m-width {
         margin: 30px auto;
     }
 }
+
+
+/* How it Works, Benefits Section */
+.how-it-works {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.how-it-works .content {
+    width: 50%;
+}
+.how-it-works .content p {
+    text-align: justify;
+    color: #2E2E2E;
+}
+.how-it-works .content h2 {
+    font-weight: 700;
+    color: #252525;
+}
+
+.how-it-works .image {
+    width: 50%;
+}
+.how-it-works .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+@media (max-width: 870px) {
+    .section.two {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .how-it-works .image, .how-it-works .content {
+        width: 100%;
+    }
+}
