@@ -120,7 +120,7 @@ m-width {
 .banner {
     margin-top: -137px;
     min-height: calc(100vh - 100px);
-    background: url(/assets/images/signa-img-banner.jpg);
+    background: url(https://upc-signa.github.io/signa-landing-page/assets/images/signa-img-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -285,7 +285,7 @@ m-width {
     display: block;
     width: 20px;
     height: 20px;
-    background: url(/assets/icons/signa-icon-check.svg);
+    background: url(https://upc-signa.github.io/signa-landing-page/assets/icons/signa-icon-check.svg);
     background-size: 100%;
     flex-shrink: 0;
     margin-top: 3px;
