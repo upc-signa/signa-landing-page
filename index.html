@@ -14,6 +14,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!--Swiper CSS for Carousel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -116,11 +119,38 @@
             </div>
         </div>
     </section>
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonios</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>"Este servicio me ha ayudado bastante a conectar con otras personas</p>
+                    <p>, me he vuelto mucho más cercano a personas que nunca he pensado que</p>
+                    <p> podía conversar por mi falta de saber lenguaje de señas"</p>
+                    <span>- Juan Pérez</span>
+                </div>
+                <div class="swiper-slide">
+                    <p>"Rompe la barrera del lenguaje que tienen</p>
+                    <p> las personas con discapacidad auditiva"</p>
+                    <span>- María López</span>
+                </div>
+                <div class="swiper-slide">
+                    <p>"Fácil y sencillo de usar y a la vez completo para poder comunicarme con otras personas"</p>
+                    <span>- Carlos Díaz</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
 
     <section id="contact" class="how-it-works section two">
         <div class="content">
             <h2>Contáctanos</h2>
-            <p>¿Listo para hacer que la comunicación sea más inclusiva y sin barreras? ¡Contáctanos hoy mismo! Envíanos un correo a <strong>contact@signa.com</strong> y descubre cómo nuestra plataforma puede transformar la forma en que las personas sordas y oyentes se conectan. Estamos aquí para ayudarte a crear espacios digitales accesibles, fluidos y humanos. ¡Esperamos saber de ti pronto!</p>
+            <p>¿Listo para hacer que la comunicación sea más inclusiva y sin barreras? ¡Contáctanos hoy mismo! Envíanos
+                un correo a <strong>contact@signa.com</strong> y descubre cómo nuestra plataforma puede transformar la
+                forma en que las personas sordas y oyentes se conectan. Estamos aquí para ayudarte a crear espacios
+                digitales accesibles, fluidos y humanos. ¡Esperamos saber de ti pronto!</p>
         </div>
 
         <div class="image">
@@ -128,9 +158,11 @@
         </div>
     </section>
 
-     <footer>
+    <footer>
         <p>Todos los derechos reservados. Signa 2025.</p>
     </footer>
+    <!-- Swiper JS para movimiento del Carrusel-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="assets/js/index.js"></script>
 </body>
