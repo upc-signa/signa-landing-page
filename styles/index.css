@@ -115,3 +115,62 @@ m-width {
     }
 }
 
+
+/* Main Content */
+.banner {
+    margin-top: -137px;
+    min-height: calc(100vh - 100px);
+    background: url(/assets/images/signa-img-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.banner main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.banner main h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+}
+.banner main a {
+    padding: 15px 50px;
+    border-radius: 7.5px;
+    background: #FC5B38;
+    color: white;
+    font-weight: 600;
+    transition: all .4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.banner main a:hover {
+    background: #da3915;
+}
+@media (max-width: 768px) {
+    .banner main h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .banner main {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 500px) {
+    .banner main h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
