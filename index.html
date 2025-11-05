@@ -125,8 +125,8 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <p>"Este servicio me ha ayudado bastante a conectar con otras personas</p>
-                    <p>, me he vuelto mucho más cercano a personas que nunca he pensado que</p>
-                    <p> podía conversar por mi falta de saber lenguaje de señas"</p>
+                    <p> ,me he vuelto mucho más cercano a personas que nunca he pensado que</p>
+                    <p> podía conversar por mi falta de saber lenguaje de señas</p>
                     <span>- Juan Pérez</span>
                 </div>
                 <div class="swiper-slide">
@@ -143,23 +143,33 @@
         </div>
     </section>
 
-
-    <section id="contact" class="how-it-works section two">
-        <div class="content">
+    <footer class="footer" id="contact">
+        <div class="footer-container">
             <h2>Contáctanos</h2>
-            <p>¿Listo para hacer que la comunicación sea más inclusiva y sin barreras? ¡Contáctanos hoy mismo! Envíanos
-                un correo a <strong>contact@signa.com</strong> y descubre cómo nuestra plataforma puede transformar la
-                forma en que las personas sordas y oyentes se conectan. Estamos aquí para ayudarte a crear espacios
-                digitales accesibles, fluidos y humanos. ¡Esperamos saber de ti pronto!</p>
-        </div>
+            <p>Déjanos tu mensaje y te responderemos lo antes posible.</p>
 
-        <div class="image">
-            <img src="assets/images/signa-img-contact.jpg" alt="Image of Contact" />
-        </div>
-    </section>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo" required>
+                </div>
 
-    <footer>
-        <p>Todos los derechos reservados. Signa 2025.</p>
+                <div class="form-row">
+                    <input type="text" name="subject" placeholder="Asunto" required>
+                    <input type="tel" name="phone" placeholder="Teléfono (opcional)">
+                </div>
+
+                <textarea name="message" placeholder="Tu mensaje..." rows="4" required></textarea>
+
+                <div class="form-button">
+                    <button type="submit">Enviar mensaje</button>
+                </div>
+            </form>
+
+            <div class="footer-bottom">
+                <p>© 2025 Proyecto SIGNA | Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
     <!-- Swiper JS para movimiento del Carrusel-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
