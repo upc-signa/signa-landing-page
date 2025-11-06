@@ -148,23 +148,51 @@
             <h2>Contáctanos</h2>
             <p>Déjanos tu mensaje y te responderemos lo antes posible.</p>
 
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" id="contactForm" novalidate>
+                <!-- Primera fila: Nombre y Email -->
                 <div class="form-row">
-                    <input type="text" name="name" placeholder="Tu nombre" required>
-                    <input type="email" name="email" placeholder="Tu correo" required>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        <span class="error-message" id="nameError">El nombre debe tener al menos 3 caracteres</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+                        <span class="error-message" id="emailError">Ingresa un correo válido</span>
+                    </div>
                 </div>
 
+                <!-- Segunda fila: Asunto y Teléfono -->
                 <div class="form-row">
-                    <input type="text" name="subject" placeholder="Asunto" required>
-                    <input type="tel" name="phone" placeholder="Teléfono (opcional)">
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                        <span class="error-message" id="subjectError">El asunto es requerido</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Teléfono (opcional)">
+                        <span class="error-message" id="phoneError">Formato inválido (ej: 999999999)</span>
+                    </div>
                 </div>
 
-                <textarea name="message" placeholder="Tu mensaje..." rows="4" required></textarea>
+                <!-- Mensaje (ocupa todo el ancho) -->
+                <div class="form-group full-width">
+                    <textarea id="message" name="message" placeholder="Tu mensaje..." rows="4" required></textarea>
+                    <span class="error-message" id="messageError">El mensaje debe tener al menos 10 caracteres</span>
+                </div>
 
+                <!-- Botón -->
                 <div class="form-button">
                     <button type="submit">Enviar mensaje</button>
                 </div>
             </form>
+            <!-- Mensaje Pop-up -->
+            <div class="overlay" id="overlay"></div>
+            <div class="success-popup" id="successPopup">
+                <div class="success-icon">✓</div>
+                <h2>¡Mensaje enviado!</h2>
+                <p style="margin-top: 10px; color: #666;">Te contactaremos pronto</p>
+            </div>
 
             <div class="footer-bottom">
                 <p>© 2025 Proyecto SIGNA | Todos los derechos reservados.</p>
@@ -175,6 +203,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="assets/js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="assets/js/form-validation.js"></script>
+
 </body>
 
 </html>
