@@ -234,6 +234,12 @@ m-width {
     width: 100%;
 }
 
+.us h2 {
+    color: #da3915;
+    text-align: center;
+    
+}
+
 .us p {
     color: #2E2E2E;
     text-align: justify;
@@ -246,6 +252,98 @@ m-width {
     }
 }
 
+/* === MISIÓN Y VISIÓN === */
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mv-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 2px solid #FC5B38;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(252, 91, 56, 0.1);
+}
+
+.mv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(252, 91, 56, 0.2);
+}
+
+.mv-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FC5B38 0%, #ff8566 100%);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(252, 91, 56, 0.3);
+}
+
+.mv-icon img {
+    width: 45px;
+    height: 45px;
+    filter: brightness(0) invert(1); 
+}
+
+
+.mv-icon .icon-emoji {
+    font-size: 45px;
+}
+
+.mv-card h3 {
+    color: #FC5B38;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.mv-card p {
+    color: #2E2E2E;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 870px) {
+    .mission-vision {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .mv-card {
+        padding: 25px;
+    }
+
+    .mv-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .mv-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mv-card h3 {
+        font-size: 24px;
+    }
+
+    .mv-card p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 
 /* How it Works, Benefits Section */
 .how-it-works {
