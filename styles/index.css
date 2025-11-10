@@ -33,6 +33,9 @@ h1 {
 h2 {
     font-size: 35px;
     line-height: 30px;
+    color: #da3915;
+    text-align: center;
+    margin: 2rem;
 }
 
 h3 {
@@ -153,7 +156,7 @@ m-width {
 /* Main Content */
 .banner {
     margin-top: -137px;
-    min-height: calc(100vh - 100px);
+    min-height: calc(115vh - 100px);
     background: url(https://upc-signa.github.io/signa-landing-page/assets/images/signa-img-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,9 +180,11 @@ m-width {
 .banner main h1 {
     color: white;
     font-weight: 800;
+    min-height: calc();
     font-size: 45px;
     line-height: 55px;
     text-align: center;
+    margin: 1rem;
 }
 
 .banner main a {
@@ -210,8 +215,8 @@ m-width {
 
 @media (max-width: 500px) {
     .banner main h1 {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 35px;
+        line-height: 45px;
     }
 }
 
@@ -219,6 +224,10 @@ m-width {
 .section {
     margin: 60px auto;
     max-width: 850px;
+}
+
+.section .content p {
+ padding: 2rem;
 }
 
 .us {
@@ -234,11 +243,7 @@ m-width {
     width: 100%;
 }
 
-.us h2 {
-    color: #da3915;
-    text-align: center;
-    
-}
+
 
 .us p {
     color: #2E2E2E;
@@ -400,6 +405,7 @@ m-width {
     text-align: justify;
     color: #2E2E2E;
     margin-bottom: 40px;
+    padding: 2rem;
 }
 
 .plans-benefits .plans {
@@ -544,6 +550,10 @@ m-width {
 
 .swiper-pagination {
     display: none !important;
+}
+
+.swiper-slide span{
+    margin: 2rem;
 }
 
 /* Footer */
